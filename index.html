@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A private, local-first focus timer and task desk.">
+  <title>Focus Desk</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+  <header><div><p class="eyebrow">LOCAL-FIRST PRODUCTIVITY</p><h1>Focus Desk</h1><p>Focus on one thing. Keep the rest out of the way.</p></div><button id="notify" class="ghost">Enable notifications</button></header>
+  <section class="card timer-card" aria-label="Focus timer">
+    <nav aria-label="Timer mode"><button data-mode="focus" class="active">Focus</button><button data-mode="short">Short break</button><button data-mode="long">Long break</button></nav>
+    <div id="timer" class="timer" aria-live="polite">25:00</div>
+    <div class="actions"><button id="start" class="primary">Start</button><button id="reset" class="ghost">Reset</button></div>
+  </section>
+  <section class="grid">
+    <article class="card"><div class="section-head"><h2>Tasks</h2><button id="clear-done" class="ghost">Clear done</button></div>
+      <form id="task-form"><label class="sr-only" for="task-input">New task</label><input id="task-input" maxlength="160" placeholder="What needs your focus?" required><button class="primary">Add</button></form>
+      <p id="empty" class="muted">No tasks yet.</p><ul id="tasks"></ul>
+    </article>
+    <aside class="card stats"><h2>Today</h2><div><strong id="sessions">0</strong><span>focus sessions</span></div><div><strong id="minutes">0</strong><span>focused minutes</span></div><p class="muted">Stored only in this browser.</p></aside>
+  </section>
+  <footer>Focus Desk · Radwan Abdulhadi Ahmed · رضوان عبدالهادي أحمد · @rad03i2</footer>
+</main><script type="module" src="src/app.js"></script>
+</body></html>
