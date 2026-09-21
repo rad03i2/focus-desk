@@ -1,0 +1,10 @@
+{
+  "name": "focus-desk",
+  "version": "1.0.0",
+  "description": "Privacy-first focus timer and task desk that runs entirely in the browser.",
+  "type": "module",
+  "scripts": {"test": "node --test", "serve": "python -m http.server 8080"},
+  "author": "Radwan Abdulhadi Ahmed (@rad03i2)",
+  "license": "MIT",
+  "engines": {"node": ">=20"}
+}
